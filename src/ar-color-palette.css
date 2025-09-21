@@ -1,0 +1,107 @@
+/**
+ * Paleta de Colores para Aplicación AR - Algoritmos de Ordenamiento
+ * Importa este archivo a tu proyecto o copia las variables CSS que necesites
+ */
+
+:root {
+  /* === COLORES PRINCIPALES === */
+  
+  /* Azul AR Principal - Elementos principales de UI, botones primarios */
+  --ar-primary: #2563EB;
+  --ar-primary-rgb: 37, 99, 235;
+  
+  /* Violeta Interactivo - Elementos siendo comparados o seleccionados */
+  --ar-secondary: #7C3AED;
+  --ar-secondary-rgb: 124, 58, 237;
+  
+  /* Verde Éxito - Elementos correctamente ordenados o operaciones exitosas */
+  --ar-success: #10B981;
+  --ar-success-rgb: 16, 185, 129;
+  
+  /* Naranja Pivote - Elementos pivote o puntos de referencia */
+  --ar-warning: #F59E0B;
+  --ar-warning-rgb: 245, 158, 11;
+  
+  /* Rojo Comparación - Elementos en comparación activa o errores */
+  --ar-error: #EF4444;
+  --ar-error-rgb: 239, 68, 68;
+  
+  /* === COLORES DE APOYO === */
+  
+  /* Gris Neutro - Elementos sin procesar o inactivos */
+  --ar-neutral: #6B7280;
+  --ar-neutral-rgb: 107, 114, 128;
+  
+  /* Azul Fondo Translúcido - Paneles de UI semi-transparentes */
+  --ar-background: #1E293B;
+  --ar-background-rgb: 30, 41, 59;
+  
+  /* Cyan Destacado - Elementos de ayuda, tooltips, información adicional */
+  --ar-accent: #06B6D4;
+  --ar-accent-rgb: 6, 182, 212;
+  
+  /* === VARIACIONES CON TRANSPARENCIA === */
+  
+  /* Para paneles AR semi-transparentes */
+  --ar-primary-alpha-20: rgba(37, 99, 235, 0.2);
+  --ar-primary-alpha-40: rgba(37, 99, 235, 0.4);
+  --ar-primary-alpha-60: rgba(37, 99, 235, 0.6);
+  --ar-primary-alpha-80: rgba(37, 99, 235, 0.8);
+  
+  --ar-background-alpha-60: rgba(30, 41, 59, 0.6);
+  --ar-background-alpha-80: rgba(30, 41, 59, 0.8);
+  --ar-background-alpha-90: rgba(30, 41, 59, 0.9);
+  
+  /* === ESTADOS DE ALGORITMOS === */
+  
+  /* Estados específicos para visualización de algoritmos */
+  --ar-unprocessed: var(--ar-neutral);        /* Elementos sin procesar */
+  --ar-comparing: var(--ar-error);           /* Elementos en comparación */
+  --ar-pivot: var(--ar-warning);             /* Elemento pivote */
+  --ar-sorted: var(--ar-success);            /* Elementos ordenados */
+  --ar-selected: var(--ar-secondary);        /* Elementos seleccionados */
+}
+
+/* === CLASES DE UTILIDAD === */
+
+.ar-primary { background-color: var(--ar-primary); }
+.ar-primary-text { color: var(--ar-primary); }
+.ar-primary-border { border-color: var(--ar-primary); }
+
+.ar-secondary { background-color: var(--ar-secondary); }
+.ar-secondary-text { color: var(--ar-secondary); }
+.ar-secondary-border { border-color: var(--ar-secondary); }
+
+.ar-success { background-color: var(--ar-success); }
+.ar-success-text { color: var(--ar-success); }
+.ar-success-border { border-color: var(--ar-success); }
+
+.ar-warning { background-color: var(--ar-warning); }
+.ar-warning-text { color: var(--ar-warning); }
+.ar-warning-border { border-color: var(--ar-warning); }
+
+.ar-error { background-color: var(--ar-error); }
+.ar-error-text { color: var(--ar-error); }
+.ar-error-border { border-color: var(--ar-error); }
+
+.ar-neutral { background-color: var(--ar-neutral); }
+.ar-neutral-text { color: var(--ar-neutral); }
+.ar-neutral-border { border-color: var(--ar-neutral); }
+
+.ar-accent { background-color: var(--ar-accent); }
+.ar-accent-text { color: var(--ar-accent); }
+.ar-accent-border { border-color: var(--ar-accent); }
+
+/* === PANELES AR === */
+
+.ar-panel {
+  background-color: var(--ar-background-alpha-80);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--ar-primary-alpha-20);
+  border-radius: 12px;
+}
+
+.ar-overlay {
+  background-color: var(--ar-background-alpha-60);
+  backdrop-filter: blur(5px);
+}

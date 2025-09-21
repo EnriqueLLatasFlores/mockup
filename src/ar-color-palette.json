@@ -1,0 +1,127 @@
+{
+  "name": "AR Sorting Algorithms Color Palette",
+  "description": "Paleta de colores optimizada para aplicaciones de realidad aumentada enfocadas en la enseñanza de algoritmos de ordenamiento",
+  "version": "1.0.0",
+  "colors": {
+    "primary": {
+      "name": "Azul AR Principal",
+      "hex": "#2563EB",
+      "rgb": [37, 99, 235],
+      "hsl": [217, 91, 60],
+      "usage": "Elementos principales de UI, botones primarios",
+      "arBenefit": "Excelente contraste en AR, visible en múltiples condiciones de luz",
+      "figmaRole": "Primary action buttons, main navigation elements"
+    },
+    "secondary": {
+      "name": "Violeta Interactivo",
+      "hex": "#7C3AED",
+      "rgb": [124, 58, 237],
+      "hsl": [261, 83, 58],
+      "usage": "Elementos siendo comparados o seleccionados",
+      "arBenefit": "Color distintivo que resalta sobre fondos reales",
+      "figmaRole": "Interactive elements, selection states"
+    },
+    "success": {
+      "name": "Verde Éxito",
+      "hex": "#10B981",
+      "rgb": [16, 185, 129],
+      "hsl": [160, 84, 39],
+      "usage": "Elementos correctamente ordenados o operaciones exitosas",
+      "arBenefit": "Color universalmente reconocido, mantiene visibilidad en AR",
+      "figmaRole": "Success states, completed elements"
+    },
+    "warning": {
+      "name": "Naranja Pivote",
+      "hex": "#F59E0B",
+      "rgb": [245, 158, 11],
+      "hsl": [38, 92, 50],
+      "usage": "Elementos pivote o puntos de referencia",
+      "arBenefit": "Alto contraste y visibilidad en condiciones de luz variable",
+      "figmaRole": "Warning states, pivot elements, reference points"
+    },
+    "error": {
+      "name": "Rojo Comparación",
+      "hex": "#EF4444",
+      "rgb": [239, 68, 68],
+      "hsl": [0, 84, 60],
+      "usage": "Elementos en comparación activa o errores",
+      "arBenefit": "Color de atención inmediata, funciona bien en AR",
+      "figmaRole": "Error states, active comparison elements"
+    },
+    "neutral": {
+      "name": "Gris Neutro",
+      "hex": "#6B7280",
+      "rgb": [107, 114, 128],
+      "hsl": [220, 9, 46],
+      "usage": "Elementos sin procesar o inactivos",
+      "arBenefit": "No compite con el contenido principal, se integra bien",
+      "figmaRole": "Inactive elements, placeholder content"
+    },
+    "background": {
+      "name": "Azul Fondo Translúcido",
+      "hex": "#1E293B",
+      "rgb": [30, 41, 59],
+      "hsl": [223, 33, 17],
+      "usage": "Paneles de UI semi-transparentes",
+      "arBenefit": "Proporciona contraste sin bloquear completamente la vista AR",
+      "figmaRole": "Background panels, modal overlays"
+    },
+    "accent": {
+      "name": "Cyan Destacado",
+      "hex": "#06B6D4",
+      "rgb": [6, 182, 212],
+      "hsl": [189, 94, 43],
+      "usage": "Elementos de ayuda, tooltips, información adicional",
+      "arBenefit": "Color fresco que destaca sin ser intrusivo",
+      "figmaRole": "Accent elements, tooltips, help information"
+    }
+  },
+  "algorithmsMapping": {
+    "unprocessed": {
+      "color": "neutral",
+      "description": "Elementos que aún no han sido procesados por el algoritmo"
+    },
+    "comparing": {
+      "color": "error",
+      "description": "Elementos que están siendo comparados actualmente"
+    },
+    "pivot": {
+      "color": "warning",
+      "description": "Elemento pivote en algoritmos como QuickSort"
+    },
+    "sorted": {
+      "color": "success",
+      "description": "Elementos que ya están en su posición final correcta"
+    },
+    "selected": {
+      "color": "secondary",
+      "description": "Elementos seleccionados por el usuario o algoritmo"
+    }
+  },
+  "figmaInstructions": {
+    "howToImport": [
+      "1. Abre tu proyecto en Figma",
+      "2. Ve al panel de Estilos (Styles) en la barra lateral derecha",
+      "3. Haz clic en el ícono '+' junto a 'Color styles'",
+      "4. Para cada color, crea un nuevo estilo con el nombre y código HEX correspondiente",
+      "5. Organiza los estilos en grupos: 'AR Primary', 'AR States', 'AR Support'"
+    ],
+    "recommendedNaming": {
+      "primary": "AR/Primary/Blue",
+      "secondary": "AR/Interactive/Purple",
+      "success": "AR/State/Success",
+      "warning": "AR/State/Warning",
+      "error": "AR/State/Error",
+      "neutral": "AR/Support/Neutral",
+      "background": "AR/Background/Dark",
+      "accent": "AR/Accent/Cyan"
+    }
+  },
+  "arDesignTips": [
+    "Usa colores con alpha/transparencia para paneles que se superponen al mundo real",
+    "Mantén alto contraste para legibilidad en diferentes condiciones de iluminación",
+    "Los colores saturados funcionan mejor en AR pero modera su uso para evitar fatiga visual",
+    "Considera el color de fondo promedio del entorno donde se usará la app",
+    "Prueba los colores en diferentes dispositivos AR para asegurar consistencia"
+  ]
+}
